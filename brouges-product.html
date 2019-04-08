@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="Letha Handcrafted leather shoes, organic and sustainably made leather" />
+  <meta name=viewport content="width=device-width, initial-scale=1">
+  <link href="styles/stylesheet.css" type="text/css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  <title>Letha | Men's Black Brogues</title>
+</head>
+<body>
+  <header>
+    <div id="top-header">
+      <!-- LOGO -->
+      <div id="logo-container" class="col-container">
+          <a href="index.html">
+            <img id="logo" src="design/letha_headline.gif" alt="Letha Logo">
+            <p id="slogan">Tread Lightly</p>
+          </a>
+      </div>
+      <!-- LOGIN -->
+      <nav id="login-nav">
+        <ul>
+          <li><a id="cart" class="black-bag" href="#">(0)</a></li>
+          <li><a id="sign-in" class="black-profile" href="#openModal">Sign in</a></li>
+          <li><input type="button" onclick="location.href='signup.html';" value="Sign up"></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- CATEGORIES -->
+    <div id="hamburger">
+      <span id="bar-1"></span>
+      <span id="bar-2"></span>
+      <span id="bar-3"></span>
+    </div>
+
+    <div id="search-container">
+      <a class="close" title="close">X</a>
+      <input type="search" name="search" placeholder="What are you looking for?" />
+      <input type="submit" name="submit" value="Search" />
+      <p>This functionality is not working at the moment.</p>
+    </div>
+
+    <nav id="main-nav">
+        <ul id="hamburger-content">
+          <li class="dropdown"><a>Women's</a>
+            <ul class="dropdown-content">
+              <div class="border-box">
+                <li><a href="#">New in</a></li>
+                <li><a href="#">Boots</a></li>
+                <li><a href="#">Brouges</a></li>
+              </div>
+            </ul>
+          </li>
+          <li class="dropdown"><a>Men's</a>
+            <ul class="dropdown-content">
+              <div class="border-box">
+                <li><a href="newin.html">New in</a></li>
+                <li><a href="boots.html">Boots</a></li>
+                <li><a href="brouges.html">Brouges</a></li>
+              </div>
+            </ul>
+          </li>
+          <li><a href="sales.html">Sales</a></li>
+          <li><i id="search-icon"></i></li>
+        </ul>
+    </nav>
+  </header>
+
+
+<main>
+  <div id="openModal" class="modalDialog">
+    <div class="modalContent">
+      <span class="close"><a href="#close" title="Close">x</a></span>
+      <h2>Sign in</h2>
+      <form action="loggedin.php" method="get">
+        <span>
+          <label for="username">Username:</label><input name="username" type="text" required>
+        </span>
+        <span>
+          <label for="password">Password:</label><input name="password" type="password" required>
+        </span>
+        <input name="submit" type="submit" value="Log in">
+      </form>
+    </div>
+  </div>
+
+  <section class="col-container">
+    <p class="breadcrumbs"><a href="index.html">Home</a> > <a href="mens.html">Men's</a> > <a href="brouges.html">Brouges</a> > <b>Product</b></p>
+    <div class="flex center">
+      <div class="col-container center">
+        <img class="product-img" src="images/blackshoes.jpg" alt="Black brogues" />
+        <a href="#">See measurement details for this shoe</a>
+      </div>
+      <div class="product-description">
+        <h1>Bashful Brogue</h1>
+        <p class="price">$499</p>
+        <p>
+          Our Bashful Brogue is one of our most popular shoes. It is perfect as formal wear or for office use. Its comfortable sole makes it perfect for all day wear. The brogue is made from brown or black leather and is studded using our unique pattern.
+          <ul><b>Features</b>
+            <li>Available in brown or black</li>
+            <li>Comfortable</li>
+            <li>Perfect for formal wear or office use</li>
+          </ul>
+        </p>
+        <p>QTY: <input name="qty" type="number" value="1"></p>
+        <button>Add to cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Success Modal -->
+  <div id="success-modal">
+    <a class="close" title="close">X</a>
+    <p>You successfully signed up for our newsletter.
+      <br />Thank you!
+    </p>
+  </div>
+</main>
+
+<footer>
+  <nav id="footer-nav" class="row-container">
+    <ul>
+      <li><a href="#">Terms & Conditions</a></li>
+      <li><a href="about.html">About Letha</a></li>
+      <li><a href="contact.html">Contact us</a></li>
+    </ul>
+    <ul>
+      <li>
+        <span class="row-container">
+        <a class="icon" href="#"><i class="fa fa-facebook marg"></i></a>
+        <a class="icon" href="#"><i class="fa fa-instagram marg"></i></a>
+        <a class="icon" href="#"><i class="fa fa-twitter marg"></i></a>
+        <a class="icon" href="#"><i class="fa fa-snapchat marg"></i></a>
+        </span>
+      </li>
+    </ul>
+    <ul id="nl-list">
+      <li><p>Sign up to receive our newsletter</p></li>
+      <li><input id="email-input2" name="newsletter" type="email" placeholder="john.doe@example.com"><input id="email-submit2" name="newslettersubmit" type="submit" value="Subscribe"></li>
+      <li><p id="email-error2">Please enter a valid e-mail address.</p></li>
+    </ul>
+  </nav>
+  <p> &copy; 2018 Letha All Rights Reserved</p>
+</footer>
+
+<script src="scripts/global.js"></script>
+
+</body>
+</html>

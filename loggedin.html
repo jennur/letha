@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="Letha Handcrafted leather shoes, organic and sustainably made leather" />
+  <meta name=viewport content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="styles/stylesheet.css" type="text/css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="shortcut icon" type="image/x-icon" href="icons/favicon.ico" />
+  <title>Letha | What is Letha</title>
+</head>
+<body>
+  <header>
+    <div id="top-header">
+      <!-- LOGO -->
+      <div id="logo-container" class="col-container">
+          <a href="index.html">
+            <img id="logo" src="design/letha_headline.gif" alt="Letha Logo">
+            <p id="slogan">Tread Lightly</p>
+          </a>
+      </div>
+      <!-- LOGIN -->
+      <nav id="login-nav">
+        <ul>
+          <li><a id="cart" class="black-bag" href="#">(0)</a></li>
+          <li><a id="sign-in" class="black-profile" href="">My Account</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- CATEGORIES -->
+    <div id="hamburger">
+      <span id="bar-1"></span>
+      <span id="bar-2"></span>
+      <span id="bar-3"></span>
+    </div>
+
+    <div id="search-container">
+      <a class="close" title="close">X</a>
+      <input type="search" name="search" placeholder="What are you looking for?" />
+      <input type="submit" name="submit" value="Search" />
+      <p>This functionality is not working at the moment.</p>
+    </div>
+
+    <nav id="main-nav">
+        <ul id="hamburger-content">
+          <li class="dropdown"><a>Women's</a>
+            <ul class="dropdown-content">
+              <div class="border-box">
+                <li><a href="#">New in</a></li>
+                <li><a href="#">Boots</a></li>
+                <li><a href="#">Brouges</a></li>
+              </div>
+            </ul>
+          </li>
+          <li class="dropdown"><a>Men's</a>
+            <ul class="dropdown-content">
+              <div class="border-box">
+                <li><a href="newin.html">New in</a></li>
+                <li><a href="boots.html">Boots</a></li>
+                <li><a href="brouges.html">Brouges</a></li>
+              </div>
+            </ul>
+          </li>
+          <li><a href="sales.html">Sales</a></li>
+          <li><i id="search-icon"></i></li>
+        </ul>
+    </nav>
+  </header>
+
+<main>
+  <!-- Subcription Success Message Modal -->
+  <div id="success-modal">
+    <a class="close" title="close">X</a>
+    <p>You successfully signed up for our newsletter.
+      <br />Thank you!
+    </p>
+  </div>
+  <section class="col-container center">
+    <h1>Welcome back!</h1>
+    <p>What do you want to do today?</p>
+    <div class="center loggedin">
+      <button class="account-btn">Manage my account</button>
+      <button class="account-btn">Look at my orders</button>
+      <p id="note" class="hide">This functionality is not working at the moment.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <nav id="footer-nav" class="row-container">
+    <ul>
+      <li><a href="#">Terms & Conditions</a></li>
+      <li><a href="about.html">About Letha</a></li>
+      <li><a href="contact.html">Contact us</a></li>
+    </ul>
+    <ul>
+      <li>
+        <span class="row-container">
+        <a class="icon" href="#"><i class="fa fa-facebook marg"></i></a>
+        <a class="icon" href="#"><i class="fa fa-instagram marg"></i></a>
+        <a class="icon" href="#"><i class="fa fa-twitter marg"></i></a>
+        <a class="icon" href="#"><i class="fa fa-snapchat marg"></i></a>
+        </span>
+      </li>
+    </ul>
+    <ul id="nl-list">
+      <li><p>Sign up to receive our newsletter</p></li>
+      <li><input id="email-input2" name="newsletter" type="email" placeholder="john.doe@example.com"><input id="email-submit2" name="newslettersubmit" type="submit" value="Subscribe"></li>
+      <li><p id="email-error2">Please enter a valid e-mail address.</p></li>
+    </ul>
+  </nav>
+  <p> &copy; 2018 Letha All Rights Reserved</p>
+</footer>
+<script src="scripts/global.js"></script>
+<script src="scripts/loggedin.js"></script>
+</body>
+</html>
